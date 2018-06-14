@@ -11,7 +11,7 @@ import java.util.List;
  */
 public interface AnalysisRepository extends JpaRepository<SteamAnalysis, Long> {
 
-    @Query(value = "select s.id,s.name,s.now,s.max,s.time from steam_analysis s")
+    @Query(value = "select s.id,s.name,s.now,s.max,s.time from SteamAnalysis s")
     List<SteamAnalysis> findAllFormatDate();
 
 }

@@ -1,5 +1,7 @@
 package com.xxdd.steam.bean;
 
+import org.springframework.format.annotation.DateTimeFormat;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
@@ -25,6 +27,7 @@ public class SteamAnalysis implements Serializable {
     private String name;
     private Integer now;
     private Integer max;
+    @DateTimeFormat(pattern = "yyyy-MM-dd HH:mm:ss")
     private Date time;
 
     public String getId() {
