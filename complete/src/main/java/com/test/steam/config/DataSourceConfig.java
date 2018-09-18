@@ -1,4 +1,4 @@
-package com.xxdd.steam.config;
+package com.test.steam.config;
 
 import org.springframework.boot.jdbc.DataSourceBuilder;
 import org.springframework.context.annotation.Bean;
@@ -8,7 +8,7 @@ import org.sqlite.SQLiteDataSource;
 import javax.sql.DataSource;
 
 /**
- * Created by Leo.Xu on 2018/6/14.
+ * Created by Maybe on 2018/6/14.
  */
 @Configuration
 public class DataSourceConfig {

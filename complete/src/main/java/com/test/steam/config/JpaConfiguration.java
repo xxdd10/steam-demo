@@ -1,4 +1,4 @@
-package com.xxdd.steam.config;
+package com.test.steam.config;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
@@ -14,11 +14,11 @@ import javax.persistence.EntityManagerFactory;
 import javax.sql.DataSource;
 
 /**
- * Created by Leo.Xu on 2018/6/14.
+ * Created by Maybe on 2018/6/14.
  */
 @Configuration
 @EnableJpaRepositories(
-        basePackages = "com.xxdd.steam",
+        basePackages = "com.test.steam",
         transactionManagerRef = "jpaTransactionManager",
         entityManagerFactoryRef = "localContainerEntityManagerFactoryBean"
 )
@@ -42,7 +42,7 @@ public class JpaConfiguration {
         LocalContainerEntityManagerFactoryBean localContainerEntityManagerFactoryBean
                 = new LocalContainerEntityManagerFactoryBean();
         localContainerEntityManagerFactoryBean.setDataSource(dataSource);
-        localContainerEntityManagerFactoryBean.setPackagesToScan("com.xxdd.steam");
+        localContainerEntityManagerFactoryBean.setPackagesToScan("com.test.steam");
         localContainerEntityManagerFactoryBean.setJpaVendorAdapter(jpaVendorAdapter);
         return localContainerEntityManagerFactoryBean;
     }
@@ -52,7 +52,7 @@ public class JpaConfiguration {
         HibernateJpaVendorAdapter hibernateJpaVendorAdapter = new HibernateJpaVendorAdapter();
         hibernateJpaVendorAdapter.setGenerateDdl(true);
         hibernateJpaVendorAdapter.setShowSql(true);
-        hibernateJpaVendorAdapter.setDatabasePlatform("com.xxdd.steam.sqlite.SQLiteDialect");
+        hibernateJpaVendorAdapter.setDatabasePlatform("SQLiteDialect");
         return hibernateJpaVendorAdapter;
     }
 }

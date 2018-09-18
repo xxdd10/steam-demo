@@ -1,4 +1,4 @@
-package com.xxdd.steam.sqlite;
+package com.test.steam.sqlite;
 
 import org.hibernate.dialect.Dialect;
 import org.hibernate.dialect.function.SQLFunctionTemplate;

@@ -1,7 +1,7 @@
-package com.xxdd.steam.controller;
+package com.test.steam.controller;
 
-import com.xxdd.steam.bean.SteamAnalysis;
-import com.xxdd.steam.repository.AnalysisRepository;
+import com.test.steam.repository.AnalysisRepository;
+import com.test.steam.bean.SteamAnalysis;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -10,7 +10,7 @@ import java.util.List;
 
 /**
  *
- * @author Leo.Xu
+ * @author Maybe
  * @date 2018/6/14
  */
 @RestController

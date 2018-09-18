@@ -1,4 +1,4 @@
-package com.xxdd.steam.bean;
+package com.test.steam.bean;
 
 import org.springframework.format.annotation.DateTimeFormat;
 
@@ -12,7 +12,7 @@ import java.util.Date;
 /**
  * PO
  *
- * @author Leo.Xu
+ * @author Maybe
  * @date 2018/6/14
  */
 @Entity

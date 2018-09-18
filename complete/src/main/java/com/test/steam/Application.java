@@ -1,4 +1,4 @@
-package com.xxdd.steam;
+package com.test.steam;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

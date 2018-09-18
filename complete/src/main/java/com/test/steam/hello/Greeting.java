@@ -1,4 +1,4 @@
-package com.xxdd.steam.hello;
+package com.test.steam.hello;
 
 public class Greeting {
 

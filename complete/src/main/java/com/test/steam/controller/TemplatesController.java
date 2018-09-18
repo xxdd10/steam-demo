@@ -1,4 +1,4 @@
-package com.xxdd.steam.controller;
+package com.test.steam.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -7,7 +7,7 @@ import javax.servlet.http.HttpServletRequest;
 
 /**
  *
- * @author Leo.Xu
+ * @author Maybe
  * @date 2018/6/14
  */
 @Controller
